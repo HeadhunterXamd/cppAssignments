@@ -1,1 +1,6 @@
 #CPP Assignments
+
+
+
+## class structure
+
