@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
     s.start_session();
 
-    return a.exec();
+    return 0;
 }
 
 
