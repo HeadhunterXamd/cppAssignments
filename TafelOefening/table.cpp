@@ -1,4 +1,5 @@
 #include "table.h"
+#include <cstdlib>
 
 Table::Table(int table_factor)
 {
