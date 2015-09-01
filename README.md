@@ -9,4 +9,4 @@
 
 
 ### implemented travis CI
-[![Build Status](https://travis-ci.org/HeadhunterXamd/cppAssignments.svg)](https://travis-ci.org/HeadhunterXamd/cppAssignments)
+The Tafeloefening project [![Build Status](https://travis-ci.org/HeadhunterXamd/cppAssignments.svg)](https://travis-ci.org/HeadhunterXamd/cppAssignments)
