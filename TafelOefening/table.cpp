@@ -1,7 +1,7 @@
 #include "table.h"
 #include <cstdlib>
 
-
+// using this template instead of the standard std::to_string because there is a bug in the mingw gcc compiler.
 #include<sstream>
     template <typename T>
     std::string to_string(T value)
