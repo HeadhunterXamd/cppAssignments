@@ -22,7 +22,7 @@ Table::Table(int table_factor)
 {
     this->initialized = true;
     for(int i = 0; i < amount_of_questions; i++){
-        std::string question = "What is " + std::to_string(i+1) + " x " + std::to_string(table_factor) + " = ? \n" ;
+        std::string question = "What is " + to_string(i+1) + " x " + to_string(table_factor) + " = ? \n" ;
 
         question_list.push_back(Question(question, (i+1)*table_factor));
     }
