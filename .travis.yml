@@ -1,2 +1,1 @@
 language: cpp
-script: make && make test
