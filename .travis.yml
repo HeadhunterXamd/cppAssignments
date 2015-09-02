@@ -1,2 +1,2 @@
 language: cpp
-script: mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && make test
+script: mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && make
