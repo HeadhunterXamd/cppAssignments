@@ -28,7 +28,6 @@ deploy:
   api-key: "${githubToken}"
   release-number:"${TRAVIS_BUILD_NUMBER}"
   file:
-    - "TafelOefening.*"
     - "TafelOefening*"
   skip_cleanup: true
   on:
