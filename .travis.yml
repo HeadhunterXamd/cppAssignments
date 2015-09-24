@@ -1,21 +1,20 @@
 language: cpp
 script: mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && make
 deploy:
-  skip_cleanup: true
+    skip_cleanup: true
 after_deploy:
-  env:
-    global:
-     # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-     #   via the "travis encrypt" command using the project repo's public key
-     - secure: "Y2AIphxa/9WbmVGPpRD+MoxboIICxmOwXAA/oPk9xHbjcT8I9koFXP9jdPqRhR0sKjrR2T3CPfujsUbtXv3BjVj2vu8hgGIldfHUtFCr34iYXStmPtcklSkudboOMWMyKIUzUuKFG4XY1SOyNpll/n9GzSueGGBFh0sPTKrSLbE="
-  
-  addons:
-    coverity_scan:
-      project:
-        name: "HeadhunterXamd/cppAssignments"
-        description: "Build submitted via Travis CI"
-      notification_email: nielsvanschooten@gmail.com
-      build_command_prepend: "mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && cd TafelOefening && make clean"
-      build_command:   "make -j 4"
-      branch_pattern: coverity_scan
+    env:
+      global:
+       # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+       #   via the "travis encrypt" command using the project repo's public key
+       - secure: "Y2AIphxa/9WbmVGPpRD+MoxboIICxmOwXAA/oPk9xHbjcT8I9koFXP9jdPqRhR0sKjrR2T3CPfujsUbtXv3BjVj2vu8hgGIldfHUtFCr34iYXStmPtcklSkudboOMWMyKIUzUuKFG4XY1SOyNpll/n9GzSueGGBFh0sPTKrSLbE="
     
+    addons:
+      coverity_scan:
+        project:
+          name: "HeadhunterXamd/cppAssignments"
+          description: "Build submitted via Travis CI"
+        notification_email: nielsvanschooten@gmail.com
+        build_command_prepend: "mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && cd TafelOefening && make clean"
+        build_command:   "make -j 4"
+        branch_pattern: coverity_scan
