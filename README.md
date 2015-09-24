@@ -3,12 +3,16 @@
 
 
 ## class structure
+
 ####- Session
+
 ####- Table
+
 ####- Question
 
 
 ### implemented travis CI
+
 The Tafeloefening project [![Build Status](https://travis-ci.org/HeadhunterXamd/cppAssignments.svg)](https://travis-ci.org/HeadhunterXamd/cppAssignments)
 
 ### Code coverage
