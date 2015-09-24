@@ -26,8 +26,10 @@ before_deploy:
 deploy:
   provider: releases
   api-key: "${githubToken}"
+  release-number:"${TRAVIS_BUILD_NUMBER}"
   file:
     - "TafelOefening.*"
+    - "TafelOefening*"
   skip_cleanup: true
   on:
-    tags: "${TRAVIS_BUILD_NUMBER}"
+    tags: false
