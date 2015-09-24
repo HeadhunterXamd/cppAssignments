@@ -13,7 +13,7 @@
 
 ### implemented travis CI
 
-The Tafeloefening project [![Build Status](https://travis-ci.org/HeadhunterXamd/cppAssignments.svg)](https://travis-ci.org/HeadhunterXamd/cppAssignments)
+[![Build Status](https://travis-ci.org/HeadhunterXamd/cppAssignments.svg)](https://travis-ci.org/HeadhunterXamd/cppAssignments)
 
 ### Code coverage
 <a href="https://scan.coverity.com/projects/headhunterxamd-cppassignments">
