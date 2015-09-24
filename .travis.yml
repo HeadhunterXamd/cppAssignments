@@ -30,4 +30,4 @@ deploy:
     - "TafelOefening.*"
   skip_cleanup: true
   on:
-    tags: false
+    tags: "${TRAVIS_BUILD_NUMBER}"
