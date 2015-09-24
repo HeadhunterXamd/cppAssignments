@@ -16,6 +16,6 @@ addons:
       notification_email: nielsvanschooten@gmail.com
       build_command_prepend: "mkdir build && cd build && cmake -G \"Unix Makefiles\" ..TafelOefening/"
       build_command: "make -j4"
-      branch_pattern: master
+      branch_pattern: coverity_scan
 
 script: mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && make
