@@ -14,7 +14,7 @@ addons:
         name: "HeadhunterXamd/cppAssignments"
         description: "Build submitted via Travis CI"
       notification_email: nielsvanschooten@gmail.com
-      build_command_prepend: "mkdir build && cd build && cmake -G \"Unix Makefiles\" .."
+      build_command_prepend: "mkdir build && cd build && cmake -G \"Unix Makefiles\" /home/travis/build/HeadhunterXamd/cppAssignments/TafelOefening-"
       build_command: "make -j4"
       branch_pattern: coverity_scan
 
