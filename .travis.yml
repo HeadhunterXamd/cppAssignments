@@ -9,13 +9,13 @@ env:
     - secure: "Y2AIphxa/9WbmVGPpRD+MoxboIICxmOwXAA/oPk9xHbjcT8I9koFXP9jdPqRhR0sKjrR2T3CPfujsUbtXv3BjVj2vu8hgGIldfHUtFCr34iYXStmPtcklSkudboOMWMyKIUzUuKFG4XY1SOyNpll/n9GzSueGGBFh0sPTKrSLbE="
    
 addons:
-  coverity_scan:
-    project:
-      name: "HeadhunterXamd/cppAssignments"
-      description: "Build submitted via Travis CI"
-    notification_email: nielsvanschooten@gmail.com
-    build_command_prepend: "mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/"
-    build_command: "make -j4"
-    branch_pattern: master
+    coverity_scan:
+      project:
+        name: "HeadhunterXamd/cppAssignments"
+        description: "Build submitted via Travis CI"
+      notification_email: nielsvanschooten@gmail.com
+      build_command_prepend: "mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/"
+      build_command: "make -j4"
+      branch_pattern: master
 
 script: mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && make
