@@ -19,7 +19,7 @@ addons:
       build_command: "make -j4"
       branch_pattern: coverity_scan
 
-script: if [ "${COVERITY_SCAN_BRANCH}" != 1 ]; then mkdir build && cd build && cmake -G "Unix Makefiles" ~/cppAssignments/TafelOefening && make -j4 ; fi
+script: if [ "${COVERITY_SCAN_BRANCH}" != 1 ]; then mkdir build && cd build && cmake -G "Unix Makefiles" ~/HeadhunterXamd/cppAssignments/TafelOefening && make -j4 ; fi
 before_deploy:
     "travis setup releases"
 deploy:
