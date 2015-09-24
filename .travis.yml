@@ -25,7 +25,7 @@ before_deploy:
 
 deploy:
   provider: releases
-  api-key: "GITHUB OAUTH TOKEN"
+  api-key: "${githubToken}"
   file:
     - "TafelOefening.*"
   skip_cleanup: true
