@@ -22,7 +22,7 @@ addons:
 script: if [ "${COVERITY_SCAN_BRANCH}" != 1 ]; then mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && make -j4 ; fi
 before_deploy:
     #"travis setup releases"
-    "ECHO 'Finished?'"
+
 deploy:
   provider: releases
   api-key: "GITHUB OAUTH TOKEN"
