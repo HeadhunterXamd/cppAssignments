@@ -28,7 +28,7 @@ deploy:
   api-key: "${githubToken}"
   file:
     - "TafelOefening.*"
-  release-number: ${BUILDTAG}
+  release-number: ${BUILDTAG}ALPHA
   skip_cleanup: true
   on:
     tags: false
