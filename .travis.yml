@@ -20,16 +20,16 @@ addons:
       branch_pattern: coverity_scan
 
 script: if [ "${COVERITY_SCAN_BRANCH}" != 1 ]; then mkdir build && cd build && cmake -G "Unix Makefiles" ../TafelOefening/ && make -j4 ; fi
-before_deploy:
+#before_deploy:
     #"travis setup releases"
-before_deploy: git fetch --tags
-deploy:
-  provider: releases
-  api-key: "${githubToken}"
-  file:
-    - "TafelOefening.*"
-  release-number: ${BUILDTAG}ALPHA
-  skip_cleanup: true
-  on:
-    tags: true
-    all_branches: true
+#before_deploy: git fetch --tags
+#deploy:
+#  provider: releases
+#  api-key: "${githubToken}"
+#  file:
+#    - "TafelOefening.*"
+#  release-number: ${BUILDTAG}
+#  skip_cleanup: true
+#  on:
+#    tags: true
+#    all_branches: true
