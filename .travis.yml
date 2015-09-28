@@ -31,5 +31,5 @@ deploy:
   release-number: ${BUILDTAG}ALPHA
   skip_cleanup: true
   on:
-    tags: false
+    tags: true
     all_branches: true
